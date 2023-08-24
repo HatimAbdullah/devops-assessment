@@ -4,5 +4,5 @@ cluster:
 	    -v /etc/machine-id:/etc/machine-id:ro \
 	    -v /var/log/journal:/var/log/journal:ro \
 	    -v /var/run/docker.sock:/var/run/docker.sock \
-	    --k3s-server-arg '--no-deploy=traefik' \
+	    --k3s-arg="--disable=traefik@server:0" \   # Disabling the default Traefik deployment using K3s’ --disable=traefik flag.
 	    --agents 0
