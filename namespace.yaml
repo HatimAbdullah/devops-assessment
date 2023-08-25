@@ -1,0 +1,7 @@
+# create namespace elbdrawy
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: elbdrawy
+  labels:
+    name: elbdrawy-ns
